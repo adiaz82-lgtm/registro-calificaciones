@@ -1,0 +1,118 @@
+
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #edf3f5;
+    color: #243b46;
+    padding: 35px 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* PANEL DE REGISTRO */
+.panel-captura {
+    background-color: #ffffff;
+    border: 1px solid #d8e4e8;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 18px rgba(22, 53, 65, 0.07);
+}
+
+/* CAMPOS DEL FORMULARIO */
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.grupo-campo label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #294b59;
+}
+
+input {
+    padding: 13px;
+    border: 1px solid #cbd9de;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #f8fbfc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #168b85;
+    box-shadow: 0 0 0 3px rgba(22, 139, 133, 0.12);
+}
+
+/* BOTONES */
+#boton-registrar,
+#boton-reiniciar {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#boton-registrar {
+    background-color: #147d78;
+    color: white;
+}
+
+#boton-registrar:hover {
+    background-color: #10645f;
+    transform: translateY(-2px);
+}
+
+#boton-reiniciar {
+    background-color: #e8eef0;
+    color: #294b59;
+    margin-left: 8px;
+}
+
+#boton-reiniciar:hover {
+    background-color: #d4e0e4;
+}
+
+/* TARJETAS DE ALUMNOS */
+.tarjeta {
+    background-color: white;
+    border: 1px solid #dce6e9;
+    border-left: 5px solid #168b85;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(22, 53, 65, 0.05);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3px);
+}
+
+/* ALUMNO APROBADO */
+.estado-positivo {
+    background-color: #e5f5ed;
+    border-left-color: #239b68;
+}
+
+/* ALUMNO REPROBADO */
+.estado-alerta {
+    background-color: #fff0ed;
+    border-left-color: #d65b50;
+}
